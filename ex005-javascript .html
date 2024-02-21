@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculando Salario</title>
+    <style>
+     body{background-color: rgb(2, 31, 31);
+    color: whitesmoke ;
+    font: oblique 20pt Arial;
+    
+    }
+
+
+    </style>
+
+</head>
+<body>
+    <h1>Seu nome!
+     <p>Seu Salario!
+     </p>  
+    <script>
+        var nome = window.prompt("Digite o seu nome?")
+        var salario = Number(window.prompt(" Digite seu salario:"))
+        document.write(`Olá ${nome} seu salario e de ${salario.toFixed(2)}</br>`)
+        document.write(`Seu Salario em Reais é de ${salario.toLocaleString('pt-BR', {style: 'currency', currency: "BRL"} )}`)
+
+
+    </script>
+</body>
+</html>
