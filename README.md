@@ -1,2 +1,2 @@
-# lista-01-udwmj-2024
+# Codigos em Javascript
 Repositório criado para exercio de Javascript e Php.
