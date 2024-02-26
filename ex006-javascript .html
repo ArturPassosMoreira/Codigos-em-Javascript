@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros Passos com DOM</title>
+    <style>
+    body{
+        background-color: rgb(69, 69, 189);
+        color: white;
+        font: normal 15pt Arial;
+
+    }
+
+    </style>
+</head>
+<body> <!--ABRIR O LIVE SERVER (Ctrl+Shift+P)-->
+    <h1>
+        Iniciando estudos com o DOM </h1>
+    <p>Aqui vai o resultado</p>
+    <div id = 'msg'>Clique em mim</div>  
+     <!-- <div name = 'msg'> Estou Aguardando </div>-->
+    <p> Aprendendo usar <strong>DOM</strong> em JavaScript</p>
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[0]
+       window.document.write(`Está escrito assim: ${p1.innerText}`)
+       //Selecionando e mudando por marca
+       /* var d = window.document.getElementById('msg')
+        d.style.background = "green"
+        d.style.color = "red" 
+        d.innerText = 'Mudando o texto'*/
+        //Selecionando e mudando por ID
+        
+       /* var e = window.document.getElementsByName('msg')[0]
+        e.style.background = "red"*/
+        //Selecionando e mudando por Nome
+
+        var f = window.document.querySelector('div#msg')
+        f.style.background = 'blue'
+        //Selecionando e mudando por Selector
+
+    </script>  
+</body>
+</html>
