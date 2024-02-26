@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt- BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            zoom: 90%;
+        }
+
+        body{
+            font: normal 22pt Arial;
+            background-image: url(https://www.gov.br/planalto/pt-br/conheca-a-presidencia/acervo/simbolos-nacionais/bandeira/bandeiragrande.jpg/@@images/image);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position:50% 15%;
+            text-align: center;
+            height: auto;
+            width: 100%;
+
+           /* image-rendering: auto;*/
+        }
+        input{
+            font: normal 30pt Arial;
+            background-color: rgb(101, 124, 124);
+        }
+        div{
+             font: normal 20pt Arial;
+             background-color:darkslategrey;
+             color:black;
+             
+        }
+
+
+    
+
+    </style>
+</head>
+<body>
+    <h1>Descobrindo se você e brasileiro</h1>
+    Nacionalidade <input type="string" name="txtbra" id="txtbra">
+    <input type="button" value="Verificar" onclick="calcularn()">
+    <div id="res"></div>
+   <script>
+    function calcularn(){
+        var txtn = window.document.querySelector("input#txtbra")
+        var res = window.document.querySelector("div#res")
+        var na = (txtn.value)
+        var na1 = (`${na.toUpperCase()}`)
+        res.innerHTML += `<p>Sua nacionalidade é: ${na1} </p>`
+        if (na1 !== "BRASIL"){
+            res.innerHTML +=(`<p> Indefinido!</p>`)
+        }else{
+            res.innerHTML += (`<p>Parabens você e <strong>Brasileiro!!! </strong></p>`)
+        }
+    }
+
+   </script>
+</body>
+</html>
